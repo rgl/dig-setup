@@ -9,7 +9,8 @@ Download it at https://bitbucket.org/rgl/dig-setup/downloads.
 ## Name to Address
 
     dig ruilopes.com
-<pre>
+
+```
 ; <<>> DiG 9.9.5-W1 <<>> ruilopes.com
 ;; global options: +cmd
 ;; Got answer:
@@ -26,13 +27,14 @@ ruilopes.com.           755     IN      A       198.199.127.14
 ;; SERVER: 192.168.2.1#53(192.168.2.1)
 ;; WHEN: Tue Feb 18 11:49:07 GMT Standard Time 2014
 ;; MSG SIZE  rcvd: 46
-</pre>
+```
 
 
 ## Name to Address (direct query)
 
     dig ruilopes.com @8.8.8.8
-<pre>
+
+```
 ; <<>> DiG 9.9.5-W1 <<>> ruilopes.com @8.8.8.8
 ;; global options: +cmd
 ;; Got answer:
@@ -51,7 +53,7 @@ ruilopes.com.           1797    IN      A       198.199.127.14
 ;; SERVER: 8.8.8.8#53(8.8.8.8)
 ;; WHEN: Tue Feb 18 11:46:16 GMT Standard Time 2014
 ;; MSG SIZE  rcvd: 57
-</pre>
+```
 
 
 ## Address to Name
@@ -59,7 +61,8 @@ ruilopes.com.           1797    IN      A       198.199.127.14
 Find out if a given IP address has a DNS PTR RR:
 
 	dig -x 198.199.127.14
-<pre>
+
+```
 ;; global options: +cmd
 ;; Got answer:
 ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44815
@@ -77,7 +80,7 @@ Find out if a given IP address has a DNS PTR RR:
 ;; SERVER: 192.168.2.1#53(192.168.2.1)
 ;; WHEN: Tue Feb 18 11:49:15 GMT Standard Time 2014
 ;; MSG SIZE  rcvd: 87
-</pre>
+```
 
 NB this is equivalent of doing `dig 14.127.199.198.in-addr.arpa.`.
 
@@ -87,7 +90,8 @@ NB this is equivalent of doing `dig 14.127.199.198.in-addr.arpa.`.
 You can query for specific [DNS Resource Records](http://en.wikipedia.org/wiki/Resource_record#DNS_resource_records). e.g. to known which email servers handle a domain, you want to retrieve the [MX (Mail Exchanger)](http://en.wikipedia.org/wiki/MX_record) DNS RR with:
 
 	dig mx ruilopes.com
-<pre>
+
+```
 ; <<>> DiG 9.9.5-W1 <<>> mx ruilopes.com
 ;; global options: +cmd
 ;; Got answer:
@@ -110,6 +114,6 @@ ruilopes.com.           300     IN      MX      5 ALT1.ASPMX.L.GOOGLE.com.
 ;; SERVER: 192.168.2.1#53(192.168.2.1)
 ;; WHEN: Tue Feb 18 12:02:24 GMT Standard Time 2014
 ;; MSG SIZE  rcvd: 171
-</pre>
+```
 
 NB you can also use `any` to retrieve all resource records of all types known to the name server.
