@@ -1,4 +1,4 @@
-This setup installs the dig (domain information groper) tool for querying Domain Name System (DNS) name servers.
+This setup installs the [dig](http://www.isc.org/downloads/bind/) (domain information groper) tool for querying [Domain Name System](http://en.wikipedia.org/wiki/Domain_Name_System) (DNS) [name servers](http://en.wikipedia.org/wiki/Name_server).
 
 Download it at [https://bitbucket.org/rgl/dig-setup/downloads](https://bitbucket.org/rgl/dig-setup/downloads).
 
