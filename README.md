@@ -1,6 +1,6 @@
 This setup installs the dig (domain information groper) tool for querying Domain Name System (DNS) name servers.
 
-Download it at https://bitbucket.org/rgl/dig-setup/downloads.
+Download it at [https://bitbucket.org/rgl/dig-setup/downloads](https://bitbucket.org/rgl/dig-setup/downloads).
 
 
 # Common usages
