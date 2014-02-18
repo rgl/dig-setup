@@ -1,0 +1,4 @@
+syntax: glob
+*.exe
+vendor
+.dig-zip-cookie
